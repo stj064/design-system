@@ -1,6 +1,6 @@
 {
   "name": "@stj064/design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "いい生活 Design System — Button と Input コンポーネントライブラリ",
   "type": "module",
   "repository": {

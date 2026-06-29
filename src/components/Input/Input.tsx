@@ -109,6 +109,8 @@ export function Input({
   rows = 3,
   id,
   className = '',
+  onFocus,
+  onBlur,
   ...rest
 }: InputProps) {
   ensureStyles()
@@ -138,22 +140,22 @@ export function Input({
         {prefix && <span className="es-input__affix">{prefix}</span>}
         {multiline ? (
           <textarea
+            {...(rest as unknown as React.TextareaHTMLAttributes<HTMLTextAreaElement>)}
             id={fieldId}
             className="es-input__el"
             aria-invalid={!!error}
             rows={rows}
-            onFocus={(e) => { setFocus(true); rest.onFocus?.(e as unknown as React.FocusEvent<HTMLInputElement>) }}
-            onBlur={(e) => { setFocus(false); rest.onBlur?.(e as unknown as React.FocusEvent<HTMLInputElement>) }}
-            disabled={disabled}
+            onFocus={(e) => { setFocus(true); onFocus?.(e as unknown as React.FocusEvent<HTMLInputElement>) }}
+            onBlur={(e) => { setFocus(false); onBlur?.(e as unknown as React.FocusEvent<HTMLInputElement>) }}
           />
         ) : (
           <input
+            {...rest}
             id={fieldId}
             className="es-input__el"
             aria-invalid={!!error}
-            onFocus={(e) => { setFocus(true); rest.onFocus?.(e) }}
-            onBlur={(e) => { setFocus(false); rest.onBlur?.(e) }}
-            {...rest}
+            onFocus={(e) => { setFocus(true); onFocus?.(e) }}
+            onBlur={(e) => { setFocus(false); onBlur?.(e) }}
           />
         )}
         {suffix && <span className="es-input__affix">{suffix}</span>}
