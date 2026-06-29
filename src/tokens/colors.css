@@ -1,0 +1,128 @@
+/* ==========================================================================
+   COLORS — いい生活 Design System
+   Built on the 3 corporate colors from the 2022 rebrand (Goodpatch):
+     かぜ BLUE  = wind  — flow of people & data, change      → primary / action
+     まち NAVY  = town  — buildings, systems, order          → sidebar / text
+     つち YELLOW = earth — land, the warmth of diversity      → accent / highlight
+   ========================================================================== */
+
+:root {
+  /* --- かぜ BLUE (primary) ------------------------------------------------ */
+  --blue-50:  #eaf6fc;
+  --blue-100: #cdeaf8;
+  --blue-200: #9fd8f0;
+  --blue-300: #66c0e6;
+  --blue-400: #2ba5db;
+  --blue-500: #1391d5;   /* base — かぜ */
+  --blue-600: #0f79b6;
+  --blue-700: #0d6294;
+  --blue-800: #0f5077;
+  --blue-900: #11405e;
+
+  /* --- まち NAVY (structure / ink) --------------------------------------- */
+  --navy-50:  #eef1f7;
+  --navy-100: #d6dded;
+  --navy-200: #aab8d3;
+  --navy-300: #7588ac;
+  --navy-400: #45587e;
+  --navy-500: #233863;
+  --navy-600: #1b2d52;
+  --navy-700: #16294f;   /* base — まち */
+  --navy-800: #111f3d;
+  --navy-900: #0c162c;
+
+  /* --- つち YELLOW (earth / accent) -------------------------------------- */
+  --yellow-50:  #fef8ea;
+  --yellow-100: #fcedc6;
+  --yellow-200: #f9dd93;
+  --yellow-300: #f6c95c;
+  --yellow-400: #f4af3d;   /* base — つち */
+  --yellow-500: #e0942a;
+  --yellow-600: #bd751f;
+  --yellow-700: #97591b;
+  --yellow-800: #6f421a;
+
+  /* --- Neutrals (cool, navy-tinted) -------------------------------------- */
+  --gray-0:   #ffffff;
+  --gray-50:  #f5f7fa;
+  --gray-100: #edf1f6;
+  --gray-200: #e1e7ef;
+  --gray-300: #cdd6e1;
+  --gray-400: #a9b5c6;
+  --gray-500: #8593a8;
+  --gray-600: #62718a;
+  --gray-700: #475469;
+  --gray-800: #2e3950;
+  --gray-900: #16294f;
+
+  /* --- Semantic feedback ------------------------------------------------- */
+  --green-50:  #e8f6ef;
+  --green-100: #c6e9d7;
+  --green-500: #1f9d6b;
+  --green-600: #18815a;
+  --green-700: #136446;
+
+  --red-50:  #fdeceb;
+  --red-100: #f9cfcc;
+  --red-500: #e14b3f;
+  --red-600: #c2342a;
+  --red-700: #9c2920;
+
+  /* ======================================================================
+     SEMANTIC ALIASES
+     ====================================================================== */
+
+  /* Brand */
+  --color-kaze:   var(--blue-500);
+  --color-machi:  var(--navy-700);
+  --color-tsuchi: var(--yellow-400);
+
+  /* Action / primary */
+  --color-primary:        var(--blue-500);
+  --color-primary-hover:  var(--blue-600);
+  --color-primary-active: var(--blue-700);
+  --color-primary-soft:   var(--blue-50);
+  --color-on-primary:     #ffffff;
+
+  /* Text */
+  --text-strong:    var(--navy-700);
+  --text-body:      var(--gray-800);
+  --text-secondary: var(--gray-600);
+  --text-muted:     var(--gray-500);
+  --text-disabled:  var(--gray-400);
+  --text-link:      var(--blue-600);
+  --text-on-dark:   rgba(255, 255, 255, 0.92);
+  --text-on-dark-muted: rgba(255, 255, 255, 0.62);
+
+  /* Surfaces */
+  --surface-page:    var(--gray-50);
+  --surface-card:    #ffffff;
+  --surface-sunken:  var(--gray-100);
+  --surface-hover:   var(--gray-50);
+  --surface-sidebar: var(--navy-700);
+  --surface-sidebar-active: var(--navy-600);
+  --surface-overlay: rgba(12, 22, 44, 0.48);
+
+  /* Borders */
+  --border-subtle:  var(--gray-100);
+  --border-default: var(--gray-200);
+  --border-strong:  var(--gray-300);
+  --border-focus:   var(--blue-500);
+
+  /* Status */
+  --status-success-fg: var(--green-700);
+  --status-success-bg: var(--green-50);
+  --status-success:    var(--green-500);
+  --status-warning-fg: var(--yellow-700);
+  --status-warning-bg: var(--yellow-50);
+  --status-warning:    var(--yellow-400);
+  --status-danger-fg:  var(--red-700);
+  --status-danger-bg:  var(--red-50);
+  --status-danger:     var(--red-500);
+  --status-info-fg:    var(--blue-700);
+  --status-info-bg:    var(--blue-50);
+  --status-info:       var(--blue-500);
+
+  /* Focus ring */
+  --ring: 0 0 0 3px rgba(19, 145, 213, 0.30);
+}

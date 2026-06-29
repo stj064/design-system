@@ -1,0 +1,62 @@
+/* ==========================================================================
+   TYPOGRAPHY — いい生活 Design System
+   Brand face: たづがね角ゴシック (Tazugane Gothic) — commercial Monotype.
+   Web substitute: Zen Kaku Gothic New (closest free humanist gothic).
+   Roboto Mono for IDs, codes and tabular figures.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* --- Families ---------------------------------------------------------- */
+  --font-sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN",
+               "Hiragino Sans", "Yu Gothic", "Meiryo", system-ui, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, "SFMono-Regular", "Consolas", monospace;
+
+  /* --- Weights ----------------------------------------------------------- */
+  --weight-regular: 400;
+  --weight-medium:  500;
+  --weight-bold:    700;
+  --weight-black:   900;
+
+  /* --- Type scale (px) — 14px body baseline ----------------------------- */
+  --text-2xs:     11px;
+  --text-xs:      12px;
+  --text-sm:      13px;
+  --text-base:    14px;
+  --text-md:      15px;
+  --text-lg:      16px;
+  --text-xl:      18px;
+  --text-2xl:     22px;
+  --text-3xl:     28px;
+  --text-4xl:     34px;
+  --text-display: 44px;
+
+  /* --- Line heights ------------------------------------------------------ */
+  --leading-tight:   1.3;
+  --leading-snug:    1.45;
+  --leading-normal:  1.7;
+  --leading-relaxed: 1.9;
+
+  /* --- Letter spacing ---------------------------------------------------- */
+  --tracking-tight:  -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.04em;
+  --tracking-caps:   0.08em;
+
+  /* --- Semantic roles ---------------------------------------------------- */
+  --font-display: var(--weight-black) var(--text-display)/1.2 var(--font-sans);
+  --font-h1:      var(--weight-bold) var(--text-3xl)/1.3 var(--font-sans);
+  --font-h2:      var(--weight-bold) var(--text-2xl)/1.35 var(--font-sans);
+  --font-h3:      var(--weight-bold) var(--text-xl)/1.4 var(--font-sans);
+  --font-title:   var(--weight-bold) var(--text-lg)/1.45 var(--font-sans);
+  --font-body:    var(--weight-regular) var(--text-base)/var(--leading-normal) var(--font-sans);
+  --font-body-sm: var(--weight-regular) var(--text-sm)/var(--leading-snug) var(--font-sans);
+  --font-label:   var(--weight-medium) var(--text-sm)/1.4 var(--font-sans);
+  --font-caption: var(--weight-regular) var(--text-xs)/1.5 var(--font-sans);
+}
+
+.is-tnum {
+  font-variant-numeric: tabular-nums lining-nums;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}

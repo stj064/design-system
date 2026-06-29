@@ -1,0 +1,49 @@
+/* ==========================================================================
+   EFFECTS — radius, borders, shadows, motion — いい生活 Design System
+   Shadows are tinted with navy ink (まち) rather than pure black.
+   ========================================================================== */
+
+:root {
+  /* --- Radius ------------------------------------------------------------ */
+  --radius-xs:   3px;
+  --radius-sm:   4px;
+  --radius-md:   6px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-2xl:  16px;
+  --radius-pill: 999px;
+
+  /* --- Border widths ----------------------------------------------------- */
+  --border-w:        1px;
+  --border-w-strong: 1.5px;
+  --border-w-focus:  2px;
+
+  /* --- Shadows (navy-tinted) -------------------------------------------- */
+  --shadow-xs: 0 1px 2px rgba(22, 41, 79, 0.06);
+  --shadow-sm: 0 1px 2px rgba(22, 41, 79, 0.06),
+               0 1px 3px rgba(22, 41, 79, 0.08);
+  --shadow-md: 0 2px 6px rgba(22, 41, 79, 0.07),
+               0 6px 16px rgba(22, 41, 79, 0.09);
+  --shadow-lg: 0 8px 24px rgba(22, 41, 79, 0.12),
+               0 2px 6px rgba(22, 41, 79, 0.08);
+  --shadow-xl: 0 18px 48px rgba(12, 22, 44, 0.20);
+  --shadow-focus: var(--ring);
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease-out:        cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:     cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-instant:     80ms;
+  --dur-fast:        150ms;
+  --dur-base:        220ms;
+  --dur-slow:        320ms;
+  --transition-base: all var(--dur-fast) var(--ease-out);
+
+  /* --- Z-index scale ----------------------------------------------------- */
+  --z-base:     1;
+  --z-sticky:   100;
+  --z-dropdown: 1000;
+  --z-overlay:  1100;
+  --z-modal:    1200;
+  --z-toast:    1300;
+  --z-tooltip:  1400;
+}
